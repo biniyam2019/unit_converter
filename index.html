@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  
 </head>
 <body>
    <div class="container">
        <div class="header">
               <div class="logo">
-                <img src="images/logo.png" alt="">
+                <img src="img/convert.png" alt="">Unit Converter
               </div>
               <div class="menu">
                 <ul>
@@ -23,7 +23,67 @@
               </div>
        </div>
         </div>
+        <div class="maincontainer">
+           <div class="main">
+            <div class="title">
+              Unit Converter
+            </div>
+
+            <div class="bottom">
+                <select name="unit" id="units">
+                    <option value="length">Length</option>
+                    <option value="area">Area</option>
+                    <option value="volume">Volume</option>
+                    <option value="mass">Mass</option>
+                    <option value="time">Time</option>
+                    <option value="speed">Speed</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+                from:
+                <select name="from" id="from">
+                    <option value="m">Meter</option>
+                    <option value="km">Kilometer</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="mm">Millimeter</option>
+                    <option value="mi">Mile</option>
+                    <option value="yd">Yard</option>
+                    <option value="ft">Foot</option>
+                    <option value="in">Inch</option>
+                </select>
+                <br>
+                to:
+                <select name="to" id="to">
+                    <option value="m">Meter</option>
+                    <option value="km">Kilometer</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="mm">Millimeter</option>
+                    <option value="mi">Mile</option>
+                    <option value="yd">Yard</option>
+                    <option value="ft">Foot</option>
+                    <option value="in">Inch</option>
+                </select>
+            <label for="input"> enter value:</label>
+             
+              <input type="text" id="input" placeholder="Enter value">
+              
+            
+              <div class="con">
+                 <input type="button" id="convert" value="Convert">
+                 <div id="output">
+                  <p id="result">Output here</p>
+              </div>
+              </div>
+              
+
+
+            </div>
+          
+    
+        </div>
+        </div>
+       
 
    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
